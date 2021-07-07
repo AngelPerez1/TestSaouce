@@ -1,0 +1,52 @@
+package Steps;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+
+public class SaouceSteps {
+
+	@Given("^the user enters the page of virtual shop$")
+	public void the_user_enters_the_page_of_virtual_shop() throws Throwable {
+	    System.out.println("since i access the main page");
+	 
+	}
+	
+	@When("^the user write the username \"([^\"]*)\" $")
+	public void the_write_the_username(String nombre) throws Throwable {
+		System.out.println("i enter the user."); 
+		
+	}
+	
+	@When("^the user write the password \"([^\"]*)\" $")
+	public void que_coloco_la_clave(String pass) throws Throwable {
+		System.out.println("i enter the password."); 
+		
+	}
+	
+	@When("^the user clicks the login button$")
+	public void hago_clic_en_el_boton_aceptar() throws Throwable {
+		System.out.println("i make click in login button.");
+		
+	}
+	
+	@When("^the user selects a produc \"([^\"]*)\" $")
+	public void the_user_selects_a_produc(String search) throws Throwable {
+		System.out.println("i select a product."); 
+		
+	}
+	
+	@When("^the user add the product to the cart \"([^\"]*)\" $")
+	public void the_user_add_the_product_to_the_cart(String search) throws Throwable {
+		System.out.println("i add the product to de cart."); 
+		
+	}
+	
+	@When("^the user checkout the purchase \"([^\"]*)\" $")
+	public void the_user_checksout_the_purchase(String search) throws Throwable {
+		System.out.println("i checkout purchase."); 
+	
+	}
+	
+}
+
+
