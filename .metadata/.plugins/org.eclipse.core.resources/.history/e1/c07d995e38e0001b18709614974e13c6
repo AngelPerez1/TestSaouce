@@ -1,0 +1,22 @@
+Feature: SaouceTest
+	
+	  @tag1 @TestSaouce1
+  Scenario: Login the virtual shop
+    Given the user enters the page of virtual shop 
+    When the user write the username "USER"
+   	And the user write the password "PASSWORD"
+		When the user clicks the login button
+		
+			@tag2 @testSaouce2
+	Scenario: Select product and or add to cart
+		Given the user enters the page of virtual shop 
+    When the user write the username "USER"
+   	And the user write the password "PASSWORD"
+		When the user clicks the login button
+		When the user selects a produc "PRODUCT"
+		And the user checkout the purchase
+		And the user enters his name
+		And the user enters his lastname
+		And the user enters his postal code
+		When the user clicks the continue button to continue with the purchase
+		And the user clicks on finish to complete the purchase

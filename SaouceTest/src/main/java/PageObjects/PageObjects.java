@@ -7,12 +7,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class PageObjects {
+public class pageobjects {
 
 	WebDriver drv;
-	public PageObjects(WebDriver driver) {
+	public pageobjects (WebDriver driver) {
 	drv=driver;
-	PageFactory.initElements(driver,this);}
+	PageFactory.initElements(drv,this);}
 
 	// FIND BY HOW AND USING
 	@FindBy(how=How.ID,using= "user-name")
