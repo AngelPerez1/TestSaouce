@@ -1,11 +1,6 @@
 
 # Test Automation #
-Proyecto de pruebas de automation
-
-## Resumen de la herramienta ##
-* Infraestructura para QA Automation Cucumber para Java
-* Versión: 0.1.0
-
+Test Automation
 
 
 #### Required: JDK 1.8 - MAVEN - Eclipse ####
