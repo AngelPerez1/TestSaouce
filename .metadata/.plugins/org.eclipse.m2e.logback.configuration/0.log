@@ -654,3 +654,5 @@ Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Failure to tra
 2021-07-12 16:55:28,181 [Worker-66: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: AutomationTest:CucumberTest:0.0.1-SNAPSHOT @ C:\Users\Acciona\Desktop\TestSaouce\SaouceTest\pom.xml.
 2021-07-12 16:55:31,814 [Worker-66: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-07-12 16:55:31,814 [Worker-66: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Acciona\Desktop\TestSaouce\SaouceTest\src\main\resources
+2021-07-12 16:55:31,817 [Worker-66: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-12 16:55:31,817 [Worker-66: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Acciona\Desktop\TestSaouce\SaouceTest\src\test\resources
