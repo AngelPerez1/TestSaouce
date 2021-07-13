@@ -22,10 +22,7 @@ Test Automation
 
 ## / test / java / runners ##
 
-Contains the executor class. In it the "tags" option is used
- as a filter for the tests that are run,
- for example "tags = {@ Regresion}".
-To run it, it runs as "JUnit Test".
+Run as cucumber.feature
 
 
 ## / test / resources / features ##
