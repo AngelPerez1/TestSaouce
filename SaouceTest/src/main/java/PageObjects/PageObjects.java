@@ -1,4 +1,4 @@
-package PageObjects;
+package pageobjects;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -12,13 +12,14 @@ public class pageobjects {
 	WebDriver drv;
 	public pageobjects (WebDriver driver) {
 	drv=driver;
-	PageFactory.initElements(drv,this);}
+	PageFactory.initElements(driver,this);}
+	
 
 	// FIND BY HOW AND USING
 	@FindBy(how=How.ID,using= "user-name")
-	private WebElement placeholder1;
-	@FindBy(how=How.ID,using="password")
 	private WebElement placeholder;
+	@FindBy(how=How.ID,using="password")
+	private WebElement placeholder1;
 	@FindBy(how=How.ID,using="login-button")
 	private WebElement btn;
 	@FindBy(how=How.ID,using="add-to-cart-sauce-labs-backpack")
@@ -61,11 +62,13 @@ public class pageobjects {
 	private WebElement hiperlink5 ;
 	@FindBy(how=How.ID,using="item_6_title_link")
 	private WebElement hiperlink6 ;
+	@FindBy(how=How.ID,using="shopping_cart_container")
+	private WebElement  link;
 	@FindBy(how=How.ID,using="checkout")
 	private WebElement btn_chk ;
 	@FindBy(how=How.ID,using="first-name")
 	private WebElement placeholder2 ;
-	@FindBy(how=How.ID,using="lastName")
+	@FindBy(how=How.ID,using="last-name")
 	private WebElement placeholder3 ;
 	@FindBy(how=How.ID,using="postal-code")
 	private WebElement placeholder4 ;
@@ -73,6 +76,9 @@ public class pageobjects {
 	private WebElement btn_ctn ;
 	@FindBy(how=How.ID,using="finish")
 	private WebElement btn_finish ;
+	@FindBy(how=How.ID,using="back-to-products")
+	private WebElement btn_bck ;
+	
 	
 	
 	
@@ -123,6 +129,9 @@ public class pageobjects {
 	btn_ctn.click();}
 	public void clickOn_btn_finish() {
 	btn_finish.click();}
+	public void clickOn_btn_bck() {
+	btn_bck.click();}
+	
 	public void placeholder_SearchText(String search) {
 	placeholder.sendKeys(Keys.ENTER);}
 	public void placeholder1_SearchText() {
@@ -133,6 +142,6 @@ public class pageobjects {
 	placeholder3.sendKeys(Keys.ENTER);}
 	public void placeholder4_SearchText() {
 	placeholder4.sendKeys(Keys.ENTER);}
-	
+
 }
 
